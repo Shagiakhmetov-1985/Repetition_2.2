@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3F60E2528D765B400E3B22F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F60E2428D765B400E3B22F /* MainViewController.swift */; };
 		C3FF494B28C78B0F00D7A8E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF494A28C78B0F00D7A8E2 /* AppDelegate.swift */; };
 		C3FF494D28C78B0F00D7A8E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF494C28C78B0F00D7A8E2 /* SceneDelegate.swift */; };
-		C3FF494F28C78B0F00D7A8E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF494E28C78B0F00D7A8E2 /* ViewController.swift */; };
+		C3FF494F28C78B0F00D7A8E2 /* MulticolorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF494E28C78B0F00D7A8E2 /* MulticolorViewController.swift */; };
 		C3FF495228C78B0F00D7A8E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FF495028C78B0F00D7A8E2 /* Main.storyboard */; };
 		C3FF495428C78B1000D7A8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FF495328C78B1000D7A8E2 /* Assets.xcassets */; };
 		C3FF495728C78B1000D7A8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FF495528C78B1000D7A8E2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3F60E2428D765B400E3B22F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C3FF494728C78B0F00D7A8E2 /* Repetition_2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetition_2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FF494A28C78B0F00D7A8E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3FF494C28C78B0F00D7A8E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3FF494E28C78B0F00D7A8E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3FF494E28C78B0F00D7A8E2 /* MulticolorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticolorViewController.swift; sourceTree = "<group>"; };
 		C3FF495128C78B0F00D7A8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3FF495328C78B1000D7A8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3FF495628C78B1000D7A8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3F60E2628D7762500E3B22F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3F60E2428D765B400E3B22F /* MainViewController.swift */,
+				C3FF494E28C78B0F00D7A8E2 /* MulticolorViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3F60E2728D7763500E3B22F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF495028C78B0F00D7A8E2 /* Main.storyboard */,
+				C3FF495528C78B1000D7A8E2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C3F60E2828D7764F00E3B22F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF494A28C78B0F00D7A8E2 /* AppDelegate.swift */,
+				C3FF494C28C78B0F00D7A8E2 /* SceneDelegate.swift */,
+				C3FF495828C78B1000D7A8E2 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		C3F60E2928D7765900E3B22F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF495328C78B1000D7A8E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C3FF493E28C78B0F00D7A8E2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +94,10 @@
 		C3FF494928C78B0F00D7A8E2 /* Repetition_2.2 */ = {
 			isa = PBXGroup;
 			children = (
-				C3FF494A28C78B0F00D7A8E2 /* AppDelegate.swift */,
-				C3FF494C28C78B0F00D7A8E2 /* SceneDelegate.swift */,
-				C3FF494E28C78B0F00D7A8E2 /* ViewController.swift */,
-				C3FF495028C78B0F00D7A8E2 /* Main.storyboard */,
-				C3FF495328C78B1000D7A8E2 /* Assets.xcassets */,
-				C3FF495528C78B1000D7A8E2 /* LaunchScreen.storyboard */,
-				C3FF495828C78B1000D7A8E2 /* Info.plist */,
+				C3F60E2828D7764F00E3B22F /* Supporting */,
+				C3F60E2628D7762500E3B22F /* View Controllers */,
+				C3F60E2728D7763500E3B22F /* Storyboards */,
+				C3F60E2928D7765900E3B22F /* Resources */,
 			);
 			path = Repetition_2.2;
 			sourceTree = "<group>";
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FF494F28C78B0F00D7A8E2 /* ViewController.swift in Sources */,
+				C3FF494F28C78B0F00D7A8E2 /* MulticolorViewController.swift in Sources */,
 				C3FF494B28C78B0F00D7A8E2 /* AppDelegate.swift in Sources */,
 				C3FF494D28C78B0F00D7A8E2 /* SceneDelegate.swift in Sources */,
+				C3F60E2528D765B400E3B22F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S4AD5RA4FS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Repetition_2.2/Info.plist;
+				INFOPLIST_FILE = Repetition_2.2/Supporting/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Repetition_2.2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -319,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S4AD5RA4FS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Repetition_2.2/Info.plist;
+				INFOPLIST_FILE = Repetition_2.2/Supporting/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Repetition_2.2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

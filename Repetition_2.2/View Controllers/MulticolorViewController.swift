@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MulticolorViewController: UIViewController {
     
     @IBOutlet weak var multicolorView: UIView!
     
@@ -19,8 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderGreen: UISlider!
     @IBOutlet weak var sliderBlue: UISlider!
     
+    var colorMain: UIColor!
+    var delegate: SettingMulticolorViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Multiview color
+//        multicolorView.backgroundColor = colorMain
+        setSliders()
         
         //View
         multicolorView.layer.shadowColor = UIColor.black.cgColor
@@ -35,10 +41,6 @@ class ViewController: UIViewController {
         sliderGreen.maximumValue = 1
         sliderBlue.minimumValue = 0
         sliderBlue.maximumValue = 1
-        
-        sliderRed.value = 0.2
-        sliderGreen.value = 0.4
-        sliderBlue.value = 0.6
         
         sliderRed.minimumTrackTintColor = .red
         sliderGreen.minimumTrackTintColor = .green
@@ -65,6 +67,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func doneButton() {
+        delegate.setColorValue(color: multicolorView.backgroundColor ?? .white)
+        dismiss(animated: true)
+    }
+    
     private func labelColor(for values: UILabel...) {
         values.forEach { label in
             switch label {
@@ -89,6 +96,14 @@ class ViewController: UIViewController {
             blue: CGFloat(sliderBlue.value),
             alpha: 1
         )
+    }
+    
+    private func setSliders() {
+        let color = CIColor(color: colorMain)
+        
+        sliderRed.value = Float(color.red)
+        sliderGreen.value = Float(color.green)
+        sliderBlue.value = Float(color.blue)
     }
 }
 
